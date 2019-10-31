@@ -1,12 +1,3 @@
-User.create!(name:  "enui",
-             email: "enui@naryshiki.com",
-             coname: 'nonress',
-             password:              "hogehoge",
-             password_confirmation: "hogehoge",
-             admin: true,
-             activated: true,
-             activated_at: Time.zone.now)
-
 99.times do |n|
   name  = Faker::Name.name
   email = "example-#{n+1}@railstutorial.org"
@@ -56,6 +47,5 @@ category6 = Category.create(name: '事務')
                   body: body,
                   skill: skill,
                   reward: reward)
-
   end
 end
