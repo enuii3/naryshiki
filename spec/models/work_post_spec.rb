@@ -1,6 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe WorkPost, type: :model do
+<<<<<<< HEAD
 
   let(:user) { FactoryBot.create(:user) }
   let(:category) { FactoryBot.create(:category) }
@@ -15,4 +16,7 @@ RSpec.describe WorkPost, type: :model do
     workpost.valid?
     expect(workpost.errors[:category_ids]).to include("can't be blank")
   end
+=======
+  pending "add some examples to (or delete) #{__FILE__}"
+>>>>>>> parent of 0118af8...  change category_ides -> categories
 end
