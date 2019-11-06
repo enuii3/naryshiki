@@ -21,7 +21,6 @@ gem 'actiontext'
 gem 'image_processing', '~> 1.2'
 gem 'mysql2'
 gem "rubyzip", ">= 1.3.0"
-gem 'nokogiri', '~>1.10.4'
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end

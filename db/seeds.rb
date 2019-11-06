@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 enui = User.create!(
   name: 'enui',
   email: 'enui@naryshiki.com',
@@ -10,6 +11,18 @@ enui = User.create!(
 )
 
 20.times do |n|
+=======
+User.create!(name:  "enui",
+             email: "enui@naryshiki.com",
+             coname: 'nonress',
+             password:              "hogehoge",
+             password_confirmation: "hogehoge",
+             admin: true,
+             activated: true,
+             activated_at: Time.zone.now)
+
+99.times do |n|
+>>>>>>> parent of 9a8d83c... generate features user && workpost controller tests
   name  = Faker::Name.name
   email = "example-#{n+1}@railstutorial.org"
   coname = "example.company#{n+1}"
@@ -53,7 +66,12 @@ category2 = Category.create(name: 'インフルエンサー')
     user.work_posts.create!(title: title,
                   body: body,
                   skill: skill,
+<<<<<<< HEAD
                   reward: reward,
                   category_ids: category1)
+=======
+                  reward: reward)
+
+>>>>>>> parent of 9a8d83c... generate features user && workpost controller tests
   end
 end

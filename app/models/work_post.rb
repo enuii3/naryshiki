@@ -6,6 +6,7 @@ class WorkPost < ApplicationRecord
   has_many :categories, through: :work_post_category_relations
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   validates :title, :body, :category_ids, presence: true
 =======
   validates :category_ids, presence: true
@@ -14,4 +15,8 @@ class WorkPost < ApplicationRecord
 >>>>>>> parent of cc454fc... first push
 
 >>>>>>> parent of 0118af8...  change category_ides -> categories
+=======
+  validates :category_ids, presence: true
+
+>>>>>>> parent of 9a8d83c... generate features user && workpost controller tests
 end

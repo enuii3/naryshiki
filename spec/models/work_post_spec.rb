@@ -4,9 +4,9 @@ RSpec.describe WorkPost, type: :model do
 <<<<<<< HEAD
 
   let(:user) { FactoryBot.create(:user) }
-  let(:category) { FactoryBot.create(:category) }
-  let(:workpost) { FactoryBot.create(:work_post, user: user, category_ids: nil) }
+  let(:workpost) { FactoryBot.create(:workpost) }
 
+<<<<<<< HEAD
   xit 'is valid with category' do
     workpost.update_attributes(category_ids: 1).valid?
     expect(workpost).to be_valid
@@ -15,6 +15,10 @@ RSpec.describe WorkPost, type: :model do
   xit 'is invalid without category' do
     workpost.valid?
     expect(workpost.errors[:category_ids]).to include("can't be blank")
+=======
+  it 'is valid workpost' do
+
+>>>>>>> parent of 9a8d83c... generate features user && workpost controller tests
   end
 =======
   pending "add some examples to (or delete) #{__FILE__}"
