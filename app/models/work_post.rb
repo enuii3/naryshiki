@@ -5,9 +5,13 @@ class WorkPost < ApplicationRecord
   has_many :work_post_category_relations, dependent: :destroy
   has_many :categories, through: :work_post_category_relations
 <<<<<<< HEAD
+<<<<<<< HEAD
   validates :title, :body, :category_ids, presence: true
 =======
   validates :category_ids, presence: true
+=======
+  validates :categories, presence: true
+>>>>>>> parent of cc454fc... first push
 
 >>>>>>> parent of 0118af8...  change category_ides -> categories
 end
