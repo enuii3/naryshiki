@@ -2,7 +2,8 @@ FactoryBot.define do
   factory :user do
     name {'enui'}
     coname {'nonress'}
-    sequence(:email) { |n| "enui#{n}@naryshiki.com"}
+    #sequence(:email) { |n| "enui#{n}@naryshiki.com"}
+    email {'enui@naryshiki.com'}
     password {'hogehoge'}
     password_confirmation { 'hogehoge' }
     activated { false }

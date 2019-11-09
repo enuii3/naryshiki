@@ -1,13 +1,13 @@
-enui = User.create!(
-  name: 'enui',
-  email: 'enui@naryshiki.com',
-  coname: 'nonress',
-  password: 'hogehoge',
-  password_confirmation: 'hogehoge',
-  admin: 'true',
-  activated: true,
-  activated_at: Time.zone.now
-)
+#endenui = User.create!(
+#end  name: 'enui',
+#end  email: 'enui@naryshiki.com',
+#end  coname: 'nonress',
+#end  password: 'hogehoge',
+#end  password_confirmation: 'hogehoge',
+#end  admin: 'true',
+#end  activated: true,
+#end  activated_at: Time.zone.now
+#end)
 
 20.times do |n|
   name  = Faker::Name.name
@@ -41,8 +41,8 @@ user.work_posts.create!(title: 'アプリ開発',
                  skill: 'ruby on rails',
                  reward: 20000)
 
-category1 = Category.create(name: 'エンジニア')
-category2 = Category.create(name: 'インフルエンサー')
+#category1 = Category.create(name: 'エンジニア')
+#category2 = Category.create(name: 'インフルエンサー')
 
 10.times do |n|
   title = Faker::Lorem.sentence
@@ -53,7 +53,6 @@ category2 = Category.create(name: 'インフルエンサー')
     user.work_posts.create!(title: title,
                   body: body,
                   skill: skill,
-                  reward: reward,
-                  category_ids: category1)
+                  reward: reward)
   end
 end
