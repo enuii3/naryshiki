@@ -21,6 +21,8 @@ gem 'actiontext'
 gem 'image_processing', '~> 1.2'
 gem 'mysql2'
 gem "rubyzip", ">= 1.3.0"
+gem 'nokogiri', '~>1.10.4'
+gem "loofah", ">= 2.3.1"
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
@@ -31,6 +33,10 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'spring-commands-rspec'
+  gem 'pry-rails'
+  gem 'pry-doc'
+  gem 'pry-byebug'
+  gem 'pry-stack_explorer'
 end
 
 group :development, :test do
