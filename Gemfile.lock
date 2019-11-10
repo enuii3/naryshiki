@@ -334,6 +334,14 @@ GEM
     pry (0.12.2)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
+    pry-byebug (3.7.0)
+      byebug (~> 11.0)
+      pry (~> 0.10)
+    pry-doc (1.0.0)
+      pry (~> 0.11)
+      yard (~> 0.9.11)
+    pry-rails (0.3.9)
+      pry (>= 0.10.4)
     public_suffix (4.0.1)
     puma (3.12.1)
     rack (2.0.7)
@@ -475,6 +483,7 @@ GEM
     xmlrpc (0.3.0)
     xpath (3.2.0)
       nokogiri (~> 1.8)
+    yard (0.9.20)
     zeitwerk (2.1.10)
     zip (2.0.2)
 
@@ -501,6 +510,9 @@ DEPENDENCIES
   minitest-reporters
   mysql2
   pg (= 0.20.0)
+  pry-byebug
+  pry-doc
+  pry-rails
   puma (~> 3.11)
   rails (~> 6.0.0)
   rails-controller-testing
@@ -524,4 +536,4 @@ RUBY VERSION
    ruby 2.6.0p0
 
 BUNDLED WITH
-   1.17.3
+   2.0.2
