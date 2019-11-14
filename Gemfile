@@ -22,6 +22,7 @@ gem 'image_processing', '~> 1.2'
 gem 'mysql2'
 gem "rubyzip", ">= 1.3.0"
 gem 'loofah', ">= 2.3.1"
+gem 'railties'
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
